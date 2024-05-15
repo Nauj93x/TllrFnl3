@@ -6,11 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MenuPrincipal">
 
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="¡Hola! ¿Cómo estás? "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cameraActivityButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="260dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="600dp"
@@ -25,16 +36,17 @@
         android:focusable="true">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_gravity="end">
 
             <ImageView
                 android:id="@+id/cameraIcon"
                 android:layout_weight="70"
                 android:padding="10dp"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_close_24"
                 app:tint="@android:color/white"/>
@@ -42,7 +54,7 @@
             <TextView
                 android:id="@+id/cameraText"
                 android:layout_weight="30"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cerrar Sesion"
                 android:textColor="@android:color/white"
@@ -82,17 +94,17 @@
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/baseline_account_circle_24"
+                android:src="@drawable/user_id_svgrepo_com"
                 app:tint="@android:color/white"/>
 
             <TextView
                 android:id="@+id/botonMapText"
-                android:layout_weight="30"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="37dp"
+                android:layout_weight="30"
+                android:gravity="center"
                 android:text="Editar perfil"
-                android:textColor="@android:color/white"
-                android:gravity="center"/>
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -124,12 +136,12 @@
 
             <ImageView
                 android:id="@+id/botondisponibleicon"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
                 android:layout_weight="70"
                 android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_map_24"
-                app:tint="@android:color/white"/>
+                android:src="@drawable/map_point_wave_svgrepo_com"
+                app:tint="@android:color/white" />
 
             <TextView
                 android:id="@+id/botonDisponbleText"
@@ -173,10 +185,10 @@
             <ImageView
                 android:id="@+id/listaUsuariosImage"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="101dp"
                 android:layout_weight="70"
                 android:padding="10dp"
-                android:src="@drawable/baseline_groups_24"
+                android:src="@drawable/community_svgrepo_com"
                 app:tint="@android:color/white" />
 
             <TextView

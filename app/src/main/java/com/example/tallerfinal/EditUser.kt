@@ -80,11 +80,6 @@ class EditUser : AuthorizedActivity() {
                 // El campo del nombre está vacío, muestra un mensaje de error
                 Toast.makeText(this, "Por favor ingresa un nuevo nombre", Toast.LENGTH_SHORT).show()
             }
-        }
-        //lo mismo para apellido
-        binding.buttonApellido.setOnClickListener(){
-
-            val nuevoNombre = binding.apellidoForm.text.toString()
 
 
             if (nuevoNombre.isNotEmpty()) {

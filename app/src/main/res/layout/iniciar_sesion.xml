@@ -13,32 +13,24 @@
         android:contentDescription="Background"
         android:scaleType="fitXY" />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:background="@drawable/title_bg"
-        android:paddingHorizontal="60dp"
-        android:paddingVertical="15dp"
-        android:text="Iniciar sesion"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_tierra"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:text="Correo"
         android:textColor="@color/Verde3"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@+id/title"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="240dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/correo_form"
@@ -53,7 +45,6 @@
         android:textColorHint="@color/VerdeClaro1"
         app:circularflow_radiusInDP="10dp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="@id/title"
         app:layout_constraintStart_toStartOf="@id/correo"
         app:layout_constraintTop_toBottomOf="@id/correo" />
 
@@ -65,8 +56,8 @@
         android:text="Contraseña"
         android:textColor="@color/Verde3"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@+id/title"
-        app:layout_constraintTop_toBottomOf="@id/correo_form" />
+        app:layout_constraintTop_toBottomOf="@id/correo_form"
+        tools:layout_editor_absoluteX="55dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/contra_form"
@@ -74,12 +65,10 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="250dp"
         android:background="@drawable/form_bg"
         android:hint="Digite su contraseña"
         android:inputType="textPassword"
         android:textColorHint="@color/VerdeClaro1"
-        app:layout_constraintEnd_toEndOf="@id/title"
         app:layout_constraintStart_toStartOf="@id/correo"
         app:layout_constraintTop_toBottomOf="@id/contraseña" />
 

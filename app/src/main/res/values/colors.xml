@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="green_card"> #64b969 </color>
-    <color name="blue_card"> #41a5f5 </color>
+    <color name="green_card">#84B487</color>
+    <color name="blue_card">#8EC1EA</color>
     <color name="red_card"> #BA1A1A </color>
     <color name="white">#FFFFFFFF</color>
 
@@ -14,9 +14,9 @@
 
 
     <color name="Verde1">#6aab73</color>
-    <color name="Verde2">#C5CAE9</color>
-    <color name="Verde3">#8C9EFF</color>
-    <color name="VerdeClaro1">#F5F5F5</color>
+    <color name="Verde2">#DADFD6</color>
+    <color name="Verde3">#253B20</color>
+    <color name="VerdeClaro1">#6F6868</color>
     <color name="Verde4">#3949AB</color>
     <color name="Verde5">#3F51B5</color>
     <string name="snackbar_dismiss_label">Cerrar</string>

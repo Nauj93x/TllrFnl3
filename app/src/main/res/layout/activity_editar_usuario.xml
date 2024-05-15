@@ -17,7 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="Background"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
 
         <TextView
             android:id="@+id/title"
@@ -27,7 +29,7 @@
             android:background="@drawable/title_bg"
             android:paddingHorizontal="126dp"
             android:paddingVertical="15dp"
-            android:text="Editar Usuario"
+            android:text="Actualizar Información"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -35,17 +37,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="12dp"
             android:text="Nombre"
             android:textColor="@color/Verde3"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/title"
             app:layout_constraintTop_toBottomOf="@id/title" />
-
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nombre_form"
@@ -93,46 +96,35 @@
             app:layout_constraintStart_toStartOf="@id/Apellido"
             app:layout_constraintTop_toBottomOf="@id/Apellido" />
 
+
         <Button
             android:id="@+id/correo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Cambiar correo"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/Verde3"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/title"
+            android:text="Cambiar correo"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/apellido_form" />
 
         <Button
             android:id="@+id/correo_form"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/Verde3"
             android:hint="Cambiar contrasena"
             android:inputType="textEmailAddress"
-            android:backgroundTint="@color/Verde3"
             android:minHeight="48dp"
-            android:textColorHint="@color/VerdeClaro1"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
             app:endIconMode="clear_text"
-            app:layout_constraintStart_toStartOf="@+id/correo"
-            app:layout_constraintTop_toBottomOf="@id/correo" />
-
-        <Button
-            android:id="@+id/buttonApellido"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="90dp"
-            android:background="@drawable/iniciar_button"
-            android:backgroundTint="@color/Verde3"
-            android:text="Cambiar Apellido"
-            android:textColor="@color/white"
-            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonNombre" />
+            app:layout_constraintTop_toBottomOf="@id/apellido_form" />
+
 
         <Button
             android:id="@+id/buttonNombre"
@@ -142,13 +134,15 @@
             android:layout_marginBottom="140dp"
             android:background="@drawable/iniciar_button"
             android:backgroundTint="@color/Verde3"
-            android:text="Cambiar Nombre"
+            android:text="Actualizar "
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.717"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/correo_form" />
+            app:layout_constraintTop_toBottomOf="@+id/correo_form"
+            app:layout_constraintVertical_bias="0.532" />
 
         <Button
             android:id="@+id/aceptar"
@@ -162,7 +156,7 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonApellido" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonNombre" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

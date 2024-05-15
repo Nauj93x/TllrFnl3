@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.TextView
 import com.example.tallerfinal.databinding.ActivityMenuPrincipalBinding
 import com.google.firebase.Firebase
 import android.widget.Toast
@@ -26,10 +27,20 @@ class MenuPrincipal: AuthorizedActivity() {
     private val messageRef = database.getReference("messages/users")
 
 
+    fun getUserName(): String? {
+        val user = FirebaseAuth.getInstance().currentUser
+        return user?.displayName
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMenuPrincipalBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        val greetingText: TextView = findViewById(R.id.greetingText)
+        val userName: String = getUserName() ?: "Usuario desconocido"
+        greetingText.text = "¡Hola! ¿Cómo estás? $userName"
 
 
         val listView: ListView = findViewById(R.id.listaView)
