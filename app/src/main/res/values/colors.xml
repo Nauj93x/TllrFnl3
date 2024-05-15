@@ -5,17 +5,19 @@
     <color name="blue_card"> #41a5f5 </color>
     <color name="red_card"> #BA1A1A </color>
     <color name="white">#FFFFFFFF</color>
-    <color name="md_indigo_200">#9FA8DA</color>
-    <color name="md_indigo_100">#C5CAE9</color>
+
 
     <color name="pastel_pri">#a2a5bf</color>
     <color name="pastel_sec">#c2c6e5</color>
     <color name="pastel_ter">#9699b2</color>
     <color name="pastel_cuar">#555765</color>
 
-    <color name="md_indigo_A100">#8C9EFF</color>
-    <color name="md_grey_500">#F5F5F5</color>
-    <color name="md_indigo_600">#3949AB</color>
-    <color name="md_indigo_500">#3F51B5</color>
+
+    <color name="Verde1">#6aab73</color>
+    <color name="Verde2">#C5CAE9</color>
+    <color name="Verde3">#8C9EFF</color>
+    <color name="VerdeClaro1">#F5F5F5</color>
+    <color name="Verde4">#3949AB</color>
+    <color name="Verde5">#3F51B5</color>
     <string name="snackbar_dismiss_label">Cerrar</string>
 </resources>

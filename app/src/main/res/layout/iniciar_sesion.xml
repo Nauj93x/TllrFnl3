@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Correo"
-        android:textColor="@color/md_indigo_A100"
+        android:textColor="@color/Verde3"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@id/title" />
@@ -50,7 +50,7 @@
         android:hint="Digite su correo"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColorHint="@color/md_grey_500"
+        android:textColorHint="@color/VerdeClaro1"
         app:circularflow_radiusInDP="10dp"
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="@id/title"
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Contraseña"
-        android:textColor="@color/md_indigo_A100"
+        android:textColor="@color/Verde3"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@id/correo_form" />
@@ -78,7 +78,7 @@
         android:background="@drawable/form_bg"
         android:hint="Digite su contraseña"
         android:inputType="textPassword"
-        android:textColorHint="@color/md_grey_500"
+        android:textColorHint="@color/VerdeClaro1"
         app:layout_constraintEnd_toEndOf="@id/title"
         app:layout_constraintStart_toStartOf="@id/correo"
         app:layout_constraintTop_toBottomOf="@id/contraseña" />

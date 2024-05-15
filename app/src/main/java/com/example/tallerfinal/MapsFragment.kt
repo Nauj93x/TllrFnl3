@@ -7,7 +7,6 @@ import android.graphics.Canvas
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
-import android.hardware.SensorManager
 import android.location.Location
 import android.os.Bundle
 import android.util.Log
@@ -21,7 +20,6 @@ import com.example.tallerfinal.adapters.CustomInfoWindowAdapter
 import com.google.android.gms.maps.CameraUpdate
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.MapsInitializer
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.BitmapDescriptor
@@ -348,7 +346,7 @@ class MapsFragment:  Fragment(), SensorEventListener {
 
                                 // Crear PolylineOptions
                                 val polylineOptions = PolylineOptions().apply {
-                                    color(ContextCompat.getColor(requireContext(), R.color.md_indigo_A100))
+                                    color(ContextCompat.getColor(requireContext(), R.color.Verde3))
                                     width(10f)
                                     addAll(latLngList)
                                 }
