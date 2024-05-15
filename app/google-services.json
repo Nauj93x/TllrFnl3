@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "121188956907",
+    "project_id": "tllr-bfd06",
+    "storage_bucket": "tllr-bfd06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121188956907:android:2e23eafbade244117e5cae",
+        "android_client_info": {
+          "package_name": "com.example.tallerfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBGmItMh6vrlaVjKTvjhIXOF2S-5XwzwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

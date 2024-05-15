@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Background"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/title_bg"
+        android:paddingHorizontal="126dp"
+        android:paddingVertical="15dp"
+        android:text="Registro"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nombre"
+        android:textColor="@color/md_indigo_A100"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nombre_form"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_bg"
+        android:hint="Digite su nombre"
+        android:inputType="textAutoComplete"
+        android:minHeight="48dp"
+        android:textColorHint="@color/md_grey_500"
+        app:circularflow_radiusInDP="10dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/nombre"
+        app:layout_constraintTop_toBottomOf="@id/nombre" />
+
+    <TextView
+        android:id="@+id/Apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Apellido"
+        android:textColor="@color/md_indigo_A100"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/nombre_form"
+        app:layout_constraintTop_toBottomOf="@id/nombre_form" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/apellido_form"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_bg"
+        android:hint="Digite Apellido"
+        android:inputType="textAutoComplete"
+        android:minHeight="48dp"
+        android:textColorHint="@color/md_grey_500"
+        app:circularflow_radiusInDP="10dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/Apellido"
+        app:layout_constraintTop_toBottomOf="@id/Apellido" />
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Correo"
+        android:textColor="@color/md_indigo_A100"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/apellido_form" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/correo_form"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_bg"
+        android:hint="Digite su Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="@color/md_grey_500"
+        app:circularflow_radiusInDP="10dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/correo"
+        app:layout_constraintTop_toBottomOf="@id/correo" />
+
+    <TextView
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Contraseña"
+        android:textColor="@color/md_indigo_A100"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/correo_form" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contra_form"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/form_bg"
+        android:hint="Digite contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="@color/md_grey_500"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/correo"
+        app:layout_constraintTop_toBottomOf="@id/contraseña" />
+
+    <TextView
+        android:id="@+id/veri_contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Digite su identificacion"
+        android:textColor="@color/md_indigo_A100"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/contra_form" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/latitud_form"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/form_bg"
+        android:hint="Digite su identificacion"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/md_grey_500"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/correo"
+        app:layout_constraintTop_toBottomOf="@id/veri_contraseña" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/iniciar_button"
+        android:text="Registrar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUser">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/main_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Background"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/title_bg"
+            android:paddingHorizontal="126dp"
+            android:paddingVertical="15dp"
+            android:text="Editar Usuario"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nombre"
+            android:textColor="@color/md_indigo_A100"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombre_form"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/form_bg"
+            android:hint="Digite su nombre"
+            android:inputType="textAutoComplete"
+            android:minHeight="48dp"
+            android:textColorHint="@color/md_grey_500"
+            app:circularflow_radiusInDP="10dp"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="@id/title"
+            app:layout_constraintStart_toStartOf="@id/nombre"
+            app:layout_constraintTop_toBottomOf="@id/nombre" />
+
+        <TextView
+            android:id="@+id/Apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Apellido"
+            android:textColor="@color/md_indigo_A100"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/nombre_form"
+            app:layout_constraintTop_toBottomOf="@id/nombre_form" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/apellido_form"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/form_bg"
+            android:hint="Digite Apellido"
+            android:inputType="textAutoComplete"
+            android:minHeight="48dp"
+            android:textColorHint="@color/md_grey_500"
+            app:circularflow_radiusInDP="10dp"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="@id/title"
+            app:layout_constraintStart_toStartOf="@id/Apellido"
+            app:layout_constraintTop_toBottomOf="@id/Apellido" />
+
+        <Button
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cambiar correo"
+            android:backgroundTint="@color/md_indigo_A100"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@id/apellido_form" />
+
+        <Button
+            android:id="@+id/correo_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:hint="Cambiar contrasena"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/md_indigo_A100"
+            android:minHeight="48dp"
+            android:textColorHint="@color/md_grey_500"
+            app:endIconMode="clear_text"
+            app:layout_constraintStart_toStartOf="@+id/correo"
+            app:layout_constraintTop_toBottomOf="@id/correo" />
+
+        <Button
+            android:id="@+id/buttonApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="90dp"
+            android:background="@drawable/iniciar_button"
+            android:backgroundTint="@color/md_indigo_A100"
+            android:text="Cambiar Apellido"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonNombre" />
+
+        <Button
+            android:id="@+id/buttonNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="140dp"
+            android:background="@drawable/iniciar_button"
+            android:backgroundTint="@color/md_indigo_A100"
+            android:text="Cambiar Nombre"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correo_form" />
+
+        <Button
+            android:id="@+id/aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/iniciar_button"
+            android:backgroundTint="@color/md_indigo_A100"
+            android:text="Aceptar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonApellido" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
